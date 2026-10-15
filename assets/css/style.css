@@ -143,10 +143,7 @@ button { font: inherit; cursor: pointer; }
 .hero {
   position: relative; overflow: hidden;
   padding: 64px 0 88px;
-  background:
-    radial-gradient(900px 480px at 85% 10%, rgb(249 115 22 / .16), transparent 60%),
-    radial-gradient(700px 420px at 0% 100%, rgb(251 191 36 / .10), transparent 60%),
-    linear-gradient(180deg, #fff8f1 0%, #fff 100%);
+  background: linear-gradient(180deg, #fff8f1 0%, #fff 100%);
 }
 .hero-grid { display: grid; grid-template-columns: 1.2fr .8fr; align-items: center; gap: 48px; }
 .hero-badge {
