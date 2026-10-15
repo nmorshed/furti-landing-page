@@ -12,22 +12,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Furti: নিজের অনলাইন শপ খুলুন, মাত্র কয়েক ক্লিকে!</title>
 <meta name="description" content="ফেসবুক পেজ খোলার মতোই সহজে নিজের অনলাইন শপ খুলুন। ফেক অর্ডার চেক, Steadfast ডেলিভারি, স্টকের হিসাব আর স্মার্ট ড্যাশবোর্ড, সব ফ্রি। কোনো কার্ড লাগবে না।">
-<meta name="theme-color" content="#ea580c">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Furti">
+<meta name="theme-color" content="#f4510b">
+<meta name="application-name" content="Furti">
+<meta name="apple-mobile-web-app-title" content="Furti">
 <link rel="canonical" href="https://furti.bd/">
 <link rel="icon" href="assets/img/favicon-48.png" type="image/png" sizes="48x48">
-<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="image_src" href="https://furti.bd/assets/img/og-image.jpg">
 
-<!-- Facebook, Messenger and WhatsApp link card -->
+<!-- Social link card: Facebook, Messenger, WhatsApp, LinkedIn, Telegram, Viber, Slack (Open Graph).
+     Every URL is absolute, because these apps read the page from outside. -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Furti">
 <meta property="og:locale" content="bn_BD">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:url" content="https://furti.bd/">
 <meta property="og:title" content="নিজের অনলাইন শপ খুলুন, মাত্র কয়েক ক্লিকে!">
 <meta property="og:description" content="ফেক অর্ডার চেক, Steadfast ডেলিভারি, স্টকের হিসাব, সব এক জায়গায়। সারাজীবন ফ্রি, কোনো কার্ড লাগবে না।">
 <meta property="og:image" content="https://furti.bd/assets/img/og-image.jpg">
+<meta property="og:image:secure_url" content="https://furti.bd/assets/img/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ফুর্তি (Furti) লোগো: অনলাইন শপ খোলার সবচেয়ে সহজ উপায়">
+
+<!-- X (Twitter) card: same picture and words -->
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://furti.bd/">
+<meta name="twitter:title" content="নিজের অনলাইন শপ খুলুন, মাত্র কয়েক ক্লিকে!">
+<meta name="twitter:description" content="ফেক অর্ডার চেক, Steadfast ডেলিভারি, স্টকের হিসাব, সব এক জায়গায়। সারাজীবন ফ্রি, কোনো কার্ড লাগবে না।">
+<meta name="twitter:image" content="https://furti.bd/assets/img/og-image.jpg">
+<meta name="twitter:image:alt" content="ফুর্তি (Furti) লোগো: অনলাইন শপ খোলার সবচেয়ে সহজ উপায়">
 
 <link rel="preload" href="assets/img/furti-logo.webp" as="image" type="image/webp">
 <link rel="preload" href="assets/fonts/hind-siliguri-700-bengali.woff2" as="font" type="font/woff2" crossorigin>
@@ -37,9 +54,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://furti.bd/#organization",
+  "name": "Furti",
+  "alternateName": "ফুর্তি",
+  "url": "https://furti.bd/",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://furti.bd/assets/img/furti-logo.png",
+    "width": 400,
+    "height": 199
+  },
+  "image": "https://furti.bd/assets/img/og-image.jpg",
+  "areaServed": "BD",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+880-1338-004433",
+    "contactType": "customer support",
+    "areaServed": "BD",
+    "availableLanguage": ["Bengali", "English"]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Furti",
   "url": "https://furti.bd/",
+  "image": "https://furti.bd/assets/img/og-image.jpg",
+  "publisher": { "@id": "https://furti.bd/#organization" },
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
   "inLanguage": "bn",
@@ -62,6 +106,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-check" viewBox="0 0 12 12"><path d="M2.5 6.2 5 8.6l4.6-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
+
+<!-- ===================== Top bar: phone ===================== -->
+<div class="top-bar">
+  <div class="wrap">
+    <a href="tel:+8801338004433" data-call="top-bar">📞 যেকোন প্রয়োজনে কল করুন: <b>01338-004433</b></a>
+  </div>
+</div>
 
 <!-- ===================== Header ===================== -->
 <header class="site-header" id="top">

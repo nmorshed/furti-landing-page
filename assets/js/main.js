@@ -21,6 +21,11 @@
       track('demo_click', { cta_location: el.dataset.demo });
     });
   });
+  document.querySelectorAll('[data-call]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      track('call_click', { cta_location: el.dataset.call });
+    });
+  });
   document.querySelectorAll('.faq details').forEach(function (el) {
     el.addEventListener('toggle', function () {
       if (el.open) track('faq_open', { faq_question: el.querySelector('summary').textContent.trim() });

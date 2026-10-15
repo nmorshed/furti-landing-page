@@ -113,6 +113,12 @@ button { font: inherit; cursor: pointer; }
 .btn-sm { min-height: 42px; padding: 8px 18px; font-size: 16px; border-radius: 10px; }
 .btn-block { width: 100%; }
 
+/* ---------- Top bar (phone number) ---------- */
+.top-bar { background: var(--brand-600); color: #fff; font-size: 15px; line-height: 1.4; text-align: center; }
+.top-bar a { display: inline-block; padding: 7px 0; }
+.top-bar a:hover b { text-decoration: underline; }
+.top-bar b { font-weight: 700; letter-spacing: .02em; white-space: nowrap; }
+
 /* ---------- Header ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
