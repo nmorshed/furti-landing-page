@@ -44,7 +44,7 @@
     var calcTracked = false;
     var paintRange = function (input) {
       var pct = ((input.value - input.min) / (input.max - input.min)) * 100;
-      input.style.background = 'linear-gradient(90deg, #059669 ' + pct + '%, #e2e8f0 ' + pct + '%)';
+      input.style.background = 'linear-gradient(90deg, #ea580c ' + pct + '%, #e2e8f0 ' + pct + '%)';
     };
     var updateCalc = function () {
       var monthly = orders.value * (returns.value / 100) * COST_PER_RETURN;
