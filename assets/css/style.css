@@ -232,8 +232,8 @@ button { font: inherit; cursor: pointer; }
 /* ---------- Trust strip ---------- */
 .trust { border-block: 1px solid var(--line); background: #fff; padding: 22px 0; }
 .trust-row { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 14px 40px; color: var(--muted); font-weight: 500; font-size: 16px; }
-.trust-row span { display: inline-flex; align-items: center; gap: 8px; }
-.trust-row i { font-style: normal; font-size: 20px; }
+.trust-row span { display: inline-flex; align-items: center; gap: 9px; }
+.trust-row .brand-ic { height: 24px; width: auto; flex: none; }
 
 /* ---------- 3 steps ---------- */
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; position: relative; counter-reset: step; }
