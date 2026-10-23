@@ -80,6 +80,8 @@ h1, h2, h3 { color: var(--ink); line-height: 1.3; font-weight: 700; }
 ul { margin: 0; padding: 0; list-style: none; }
 button { font: inherit; cursor: pointer; }
 :focus-visible { outline: 3px solid var(--brand-500); outline-offset: 2px; border-radius: 6px; }
+/* Sprite icons sit in a line of text at the text's own size and colour */
+.i { display: inline-block; flex: none; width: 1.15em; height: 1.15em; vertical-align: -0.2em; }
 
 .wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
 .section { padding: 88px 0; }
@@ -222,11 +224,12 @@ button { font: inherit; cursor: pointer; }
 .float-card b { display: block; color: var(--ink); font-size: 15px; }
 .float-card small { color: var(--muted); font-size: 13px; }
 .float-order { top: -6px; left: -64px; }
-.float-order .ic { background: var(--brand-50); }
+.float-card .ic .i { width: 20px; height: 20px; }
+.float-order .ic { background: var(--brand-50); color: var(--brand-700); }
 .float-risk { bottom: 200px; right: -40px; animation-delay: -3s; }
-.float-risk .ic { background: var(--sun-50); }
+.float-risk .ic { background: var(--sun-50); color: var(--sun-700); }
 .float-sale { bottom: 70px; left: -72px; animation-delay: -1.5s; }
-.float-sale .ic { background: var(--brand-50); }
+.float-sale .ic { background: var(--brand-50); color: var(--brand-700); }
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
 
 /* ---------- Trust strip ---------- */
@@ -283,12 +286,15 @@ button { font: inherit; cursor: pointer; }
 }
 .f-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--brand-200); }
 .f-icon { width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; font-size: 26px; margin-bottom: 16px; }
+.f-icon .i { width: 26px; height: 26px; }
+.f-icon.bg-brand { color: var(--brand-700); }
+.f-icon.bg-sun { color: var(--sun-700); }
 .f-card h3 { font-size: 21px; }
 .f-card p { margin-top: 6px; color: var(--muted); font-size: 16.5px; }
 .bg-brand { background: var(--brand-50); }
 .bg-sun { background: var(--sun-50); }
 .features-more { margin-top: 28px; text-align: center; color: var(--muted); font-size: 16px; }
-.features-more span { display: inline-block; margin: 4px 4px 0; padding: 3px 12px; border-radius: 999px; background: #fff; border: 1px solid var(--line); color: var(--text); font-size: 15px; }
+.features-more span { display: inline-flex; align-items: center; gap: 6px; margin: 4px 4px 0; padding: 3px 12px; border-radius: 999px; background: #fff; border: 1px solid var(--line); color: var(--text); font-size: 15px; }
 
 /* ---------- Showcases ---------- */
 .showcase { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 64px; }
@@ -419,7 +425,7 @@ button { font: inherit; cursor: pointer; }
 .app-cta { display: block; text-align: center; background: var(--brand-600); color: #fff; font-weight: 600; font-size: 15px; padding: 10px; border-radius: 12px; }
 .app-nav { display: flex; justify-content: space-around; border-top: 1px solid var(--line); padding-top: 10px; font-size: 18px; }
 .app-nav span { opacity: .45; }
-.app-nav .on { opacity: 1; }
+.app-nav .on { opacity: 1; color: var(--brand-600); }
 
 /* ---------- Comparison table ---------- */
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
@@ -589,6 +595,7 @@ input[type=range]::-moz-range-thumb { width: 16px; height: 16px; border-radius: 
   .float-card b { font-size: 13.5px; }
   .float-card small { font-size: 12px; }
   .float-card .ic { width: 32px; height: 32px; font-size: 16px; }
+  .float-card .ic .i { width: 17px; height: 17px; }
   .trust-row { gap: 10px 22px; font-size: 14.5px; }
   .steps { grid-template-columns: 1fr; gap: 44px; }
   .steps::before { display: none; }

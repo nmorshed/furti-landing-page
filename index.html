@@ -122,16 +122,48 @@ src="https://www.facebook.com/tr?id=1158443840041540&ev=PageView&noscript=1"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<!-- Tick and cross icons, reused everywhere with <use href="#i-check"> / <use href="#i-x"> -->
+<!-- All page icons as one inline sprite, reused with <use href="#i-name"> -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-check" viewBox="0 0 12 12"><path d="M2.5 6.2 5 8.6l4.6-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-x" viewBox="0 0 12 12"><path d="M3.5 3.5l5 5m0-5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 7l-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+  <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2 2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+  <symbol id="i-coins" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/><path d="m16.71 13.88.7.71-2.82 2.82"/></symbol>
+  <symbol id="i-package" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="m7.5 4.27 9 5.15"/></symbol>
+  <symbol id="i-receipt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 17.5v-11"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+  <symbol id="i-cash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></symbol>
+  <symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+  <symbol id="i-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+  <symbol id="i-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></symbol>
+  <symbol id="i-kanban" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 7v7"/><path d="M12 7v4"/><path d="M16 7v9"/></symbol>
+  <symbol id="i-calculator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8"/><path d="M16 14v4"/><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.59 2.59A2 2 0 0 0 11.17 2H4a2 2 0 0 0-2 2v7.17a2 2 0 0 0 .59 1.42l8.7 8.7a2.43 2.43 0 0 0 3.42 0l6.58-6.58a2.43 2.43 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol>
 </svg>
 
 <!-- ===================== Top bar: phone ===================== -->
 <div class="top-bar">
   <div class="wrap">
-    <a href="tel:+8801338004433" data-call="top-bar">📞 যেকোন প্রয়োজনে কল করুন: <b>01338-004433</b></a>
+    <a href="tel:+8801338004433" data-call="top-bar"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg> যেকোন প্রয়োজনে কল করুন: <b>01338-004433</b></a>
   </div>
 </div>
 
@@ -177,10 +209,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="hero-visual" aria-hidden="true">
       <div class="phone">
         <div class="phone-screen">
-          <div class="shop-strip">🚚 সারা দেশে ক্যাশ অন ডেলিভারি</div>
+          <div class="shop-strip"><svg class="i" aria-hidden="true"><use href="#i-truck"/></svg> সারা দেশে ক্যাশ অন ডেলিভারি</div>
           <div class="shop-head">
             <span class="shop-logo"><span class="shop-mark">শ</span>শুদ্ধ বাজার</span>
-            <span class="shop-cart">🛒 ৳২,২০০</span>
+            <span class="shop-cart"><svg class="i" aria-hidden="true"><use href="#i-cart"/></svg> ৳২,২০০</span>
           </div>
           <div class="shop-banner">
             <img src="assets/img/banner-mustard-field.webp" alt="" width="276" height="132">
@@ -193,20 +225,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="p-card"><img src="assets/img/mustard-oil.webp" alt="" loading="lazy" width="130" height="92"><div><h4>সরিষার তেল</h4><p>৳৩২০</p><span class="mini-btn">অর্ডার করুন</span></div></div>
             <div class="p-card"><img src="assets/img/ajwa-dates.webp" alt="" loading="lazy" width="130" height="92"><div><h4>আজওয়া খেজুর</h4><p>৳১,৪৫০</p><span class="mini-btn">অর্ডার করুন</span></div></div>
           </div>
-          <div class="shop-url">🔒 <b>yourshop</b>.furti.app</div>
+          <div class="shop-url"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg> <b>yourshop</b>.furti.app</div>
         </div>
       </div>
 
       <div class="float-card float-order">
-        <span class="ic">🔔</span>
+        <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-bell"/></svg></span>
         <span><b>নতুন অর্ডার! ৳১,৪৫০</b><small>রংপুর · এইমাত্র</small></span>
       </div>
       <div class="float-card float-risk">
-        <span class="ic">🛡️</span>
-        <span><b>কাস্টমার ভালো ✓</b><small>৯৪% পার্সেল নিয়েছে</small></span>
+        <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg></span>
+        <span><b>কাস্টমার ভালো <svg class="i" aria-hidden="true"><use href="#i-check"/></svg></b><small>৯৪% পার্সেল নিয়েছে</small></span>
       </div>
       <div class="float-card float-sale">
-        <span class="ic">📈</span>
+        <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-trend"/></svg></span>
         <span><b>আজকের সেল ৳১২,৪০০</b><small>গতকালের চেয়ে ▲ ১৮%</small></span>
       </div>
     </div>
@@ -230,7 +262,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="section" id="how">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">⚡ মাত্র ৩ ধাপ</span>
+      <span class="eyebrow"><svg class="i" aria-hidden="true"><use href="#i-zap"/></svg> মাত্র ৩ ধাপ</span>
       <h2>ফেসবুক পেজ খোলার মতোই সহজ</h2>
       <p>টেকনিক্যাল কিছু জানার দরকার নেই। ফেসবুক চালাতে পারলে Furti-ও পারবেন।</p>
     </div>
@@ -242,7 +274,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>নাম লিখুন, আপনার শপের ঠিকানা সাথে সাথে তৈরি।</p>
         <div class="step-demo" aria-hidden="true">
           <div class="fake-input"><span>my-shop<i class="caret"></i></span><span>.furti.app</span></div>
-          <div class="ok">✓ ঠিকানাটি আপনার!</div>
+          <div class="ok"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> ঠিকানাটি আপনার!</div>
         </div>
       </div>
       <div class="step reveal">
@@ -262,12 +294,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>ফেসবুক, মেসেঞ্জার বা হোয়াটসঅ্যাপে দিন, অর্ডার আসা শুরু!</p>
         <div class="step-demo" aria-hidden="true">
           <div class="share-row"><span class="s-fb">Facebook</span><span class="s-ms">Messenger</span><span class="s-wa">WhatsApp</span></div>
-          <div class="first-order">🎉 আপনার প্রথম অর্ডার এসেছে!</div>
+          <div class="first-order"><svg class="i" aria-hidden="true"><use href="#i-sparkles"/></svg> আপনার প্রথম অর্ডার এসেছে!</div>
         </div>
       </div>
     </div>
 
-    <p class="steps-done reveal">ব্যস, আপনার ব্যবসা এখন <span>অনলাইনে!</span> 🎉</p>
+    <p class="steps-done reveal">ব্যস, আপনার ব্যবসা এখন <span>অনলাইনে!</span> <svg class="i" aria-hidden="true"><use href="#i-sparkles"/></svg></p>
   </div>
 </section>
 
@@ -275,23 +307,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="section section-soft" id="features">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">🧰 সব এক জায়গায়</span>
+      <span class="eyebrow"><svg class="i" aria-hidden="true"><use href="#i-grid"/></svg> সব এক জায়গায়</span>
       <h2>ব্যবসা চালাতে যা লাগে, সব এক জায়গায়</h2>
       <p>আলাদা আলাদা অ্যাপ, খাতা আর এক্সেল শিট আর লাগবে না।</p>
     </div>
 
     <div class="features">
-      <div class="f-card reveal"><div class="f-icon bg-brand">🏪</div><h3>সহজ শপ</h3><p>২ মিনিটে সুন্দর শপ, মোবাইলে দারুণ দেখায়।</p></div>
-      <div class="f-card reveal"><div class="f-icon bg-sun">📊</div><h3>স্মার্ট ড্যাশবোর্ড</h3><p>মোবাইল থেকেই পুরো ব্যবসা সামলান।</p></div>
-      <div class="f-card reveal"><div class="f-icon bg-brand">💰</div><h3>বেশি সেল</h3><p>ফেসবুক অ্যাডের ভিজিটরকে অর্ডারে রূপ দিন।</p></div>
-      <div class="f-card reveal"><div class="f-icon bg-brand">🛡️</div><h3>ফেক অর্ডার ধরুন</h3><p>পার্সেল পাঠানোর আগেই জানুন কাস্টমার আসল কিনা।</p></div>
-      <div class="f-card reveal"><div class="f-icon bg-sun">🚚</div><h3>সহজ ডেলিভারি</h3><p>এক ক্লিকে Steadfast-এ পার্সেল বুক।</p></div>
-      <div class="f-card reveal"><div class="f-icon bg-sun">📦</div><h3>স্টকের হিসাব</h3><p>প্রতিটা অর্ডারে স্টক নিজে থেকেই আপডেট হয়।</p></div>
+      <div class="f-card reveal"><div class="f-icon bg-brand"><svg class="i" aria-hidden="true"><use href="#i-store"/></svg></div><h3>সহজ শপ</h3><p>২ মিনিটে সুন্দর শপ, মোবাইলে দারুণ দেখায়।</p></div>
+      <div class="f-card reveal"><div class="f-icon bg-sun"><svg class="i" aria-hidden="true"><use href="#i-chart"/></svg></div><h3>স্মার্ট ড্যাশবোর্ড</h3><p>মোবাইল থেকেই পুরো ব্যবসা সামলান।</p></div>
+      <div class="f-card reveal"><div class="f-icon bg-brand"><svg class="i" aria-hidden="true"><use href="#i-coins"/></svg></div><h3>বেশি সেল</h3><p>ফেসবুক অ্যাডের ভিজিটরকে অর্ডারে রূপ দিন।</p></div>
+      <div class="f-card reveal"><div class="f-icon bg-brand"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg></div><h3>ফেক অর্ডার ধরুন</h3><p>পার্সেল পাঠানোর আগেই জানুন কাস্টমার আসল কিনা।</p></div>
+      <div class="f-card reveal"><div class="f-icon bg-sun"><svg class="i" aria-hidden="true"><use href="#i-truck"/></svg></div><h3>সহজ ডেলিভারি</h3><p>এক ক্লিকে Steadfast-এ পার্সেল বুক।</p></div>
+      <div class="f-card reveal"><div class="f-icon bg-sun"><svg class="i" aria-hidden="true"><use href="#i-package"/></svg></div><h3>স্টকের হিসাব</h3><p>প্রতিটা অর্ডারে স্টক নিজে থেকেই আপডেট হয়।</p></div>
     </div>
 
     <p class="features-more reveal">
       আরও আছে:
-      <span>📈 রিপোর্ট</span><span>🧾 ইনভয়েস প্রিন্ট</span><span>👥 স্টাফ অ্যাকাউন্ট</span><span>📘 Facebook Pixel</span><span>🔍 Google-এ শপ</span><span>🌐 নিজের ডোমেইন</span>
+      <span><svg class="i" aria-hidden="true"><use href="#i-trend"/></svg> রিপোর্ট</span><span><svg class="i" aria-hidden="true"><use href="#i-receipt"/></svg> ইনভয়েস প্রিন্ট</span><span><svg class="i" aria-hidden="true"><use href="#i-users"/></svg> স্টাফ অ্যাকাউন্ট</span><span><svg class="i" aria-hidden="true"><use href="#i-facebook"/></svg> Facebook Pixel</span><span><svg class="i" aria-hidden="true"><use href="#i-search"/></svg> Google-এ শপ</span><span><svg class="i" aria-hidden="true"><use href="#i-globe"/></svg> নিজের ডোমেইন</span>
     </p>
   </div>
 </section>
@@ -303,7 +335,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- 4.1 Fraud -->
     <div class="showcase">
       <div class="sc-text reveal">
-        <span class="sc-tag bg-brand" style="color:var(--brand-700)">🛡️ ফেক অর্ডার ধরুন</span>
+        <span class="sc-tag bg-brand" style="color:var(--brand-700)"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg> ফেক অর্ডার ধরুন</span>
         <h2>রিটার্ন পার্সেলে আর লোকসান নয়</h2>
         <p>প্রতিটা ফেরত পার্সেলে ডেলিভারি চার্জ যায় আপনার পকেট থেকে। Furti আগেই বলে দেয় কোন কাস্টমার ঝুঁকিপূর্ণ।</p>
         <ul class="check-list">
@@ -329,7 +361,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="row danger"><span class="who"><span class="av" style="background:#dc2626">স</span><span><b>Sabbir H.</b><small>Bogura · #1043</small></span></span><span class="pill pill-red">Risky</span></div>
             <div class="row"><span class="who"><span class="av" style="background:var(--sun-400);color:#422006">র</span><span><b>Rakib Islam</b><small>Dinajpur · #1044</small></span></span><span class="pill pill-amber">Be careful</span></div>
           </div>
-          <div class="warn-box">⚠️ <span style="font-family:'Hind Siliguri',system-ui,sans-serif;font-size:14.5px">এই ক্রেতা ৯টি পার্সেল ফেরত দিয়েছেন। ডেলিভারি চার্জ বা প্রোডাক্টের দাম আগে পরিশোধ না করলে তিনি আর অর্ডার করতে পারবেন না।</span></div>
+          <div class="warn-box"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg><span style="font-family:'Hind Siliguri',system-ui,sans-serif;font-size:14.5px">এই ক্রেতা ৯টি পার্সেল ফেরত দিয়েছেন। ডেলিভারি চার্জ বা প্রোডাক্টের দাম আগে পরিশোধ না করলে তিনি আর অর্ডার করতে পারবেন না।</span></div>
         </div>
       </div>
     </div>
@@ -337,7 +369,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- 4.2 Sales -->
     <div class="showcase reverse">
       <div class="sc-text reveal">
-        <span class="sc-tag bg-brand" style="color:var(--brand-700)">💰 বেশি সেল</span>
+        <span class="sc-tag bg-brand" style="color:var(--brand-700)"><svg class="i" aria-hidden="true"><use href="#i-coins"/></svg> বেশি সেল</span>
         <h2>অ্যাডে ক্লিক, সাথে সাথে অর্ডার</h2>
         <p>ফেসবুক অ্যাডে টাকা খরচ করছেন? কাস্টমার যেন পেজ ছেড়ে না যায়, Furti সেই ব্যবস্থা করে দেয়।</p>
         <ul class="check-list">
@@ -357,10 +389,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="pkg"><span><i class="radio"></i><b>৩টি</b> <span class="pill pill-amber">বেস্ট ভ্যালু</span></span><span>৳২,১০০</span></div>
           <div class="zones"><span class="on">ঢাকার ভিতরে ৳৬০</span><span>ঢাকার বাইরে ৳১২০</span></div>
           <span class="confirm">অর্ডার কনফার্ম করুন ৳১,৫৬০</span>
-          <p class="cod">💵 ক্যাশ অন ডেলিভারি · শপ আপনাকে কল করে কনফার্ম করবে</p>
+          <p class="cod"><svg class="i" aria-hidden="true"><use href="#i-cash"/></svg> ক্যাশ অন ডেলিভারি · শপ আপনাকে কল করে কনফার্ম করবে</p>
         </div>
         <div class="side-note">
-          <b>📞 ৩ জন অর্ডার শেষ করেনি</b>
+          <b><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg> ৩ জন অর্ডার শেষ করেনি</b>
           <span style="color:var(--muted)">৳৮,০৫০ অপেক্ষা করছে। কল করুন, সেল ফিরিয়ে আনুন।</span>
         </div>
       </div>
@@ -369,7 +401,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- 4.3 Delivery -->
     <div class="showcase">
       <div class="sc-text reveal">
-        <span class="sc-tag bg-sun" style="color:var(--sun-700)">🚚 সহজ ডেলিভারি</span>
+        <span class="sc-tag bg-sun" style="color:var(--sun-700)"><svg class="i" aria-hidden="true"><use href="#i-truck"/></svg> সহজ ডেলিভারি</span>
         <h2>কুরিয়ারে ঠিকানা কপি করার দিন শেষ</h2>
         <p>একটা একটা করে নাম, নাম্বার আর ঠিকানা টাইপ করার দরকার নেই। এক ক্লিকেই সব পার্সেল Steadfast-এ।</p>
         <ul class="check-list">
@@ -397,7 +429,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- 4.4 Dashboard + stock -->
     <div class="showcase reverse">
       <div class="sc-text reveal">
-        <span class="sc-tag bg-sun" style="color:var(--sun-700)">📊 স্মার্ট ড্যাশবোর্ড ও স্টক</span>
+        <span class="sc-tag bg-sun" style="color:var(--sun-700)"><svg class="i" aria-hidden="true"><use href="#i-chart"/></svg> স্মার্ট ড্যাশবোর্ড ও স্টক</span>
         <h2>১০ সেকেন্ডেই ব্যবসার পুরো খবর</h2>
         <p>সকালে ড্যাশবোর্ড খুললেই বুঝবেন আজ কী করতে হবে। খাতা-কলম আর এক্সেলের দিন শেষ।</p>
         <ul class="check-list">
@@ -434,7 +466,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="section section-soft" id="soon">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">🚀 শীঘ্রই আসছে</span>
+      <span class="eyebrow"><svg class="i" aria-hidden="true"><use href="#i-rocket"/></svg> শীঘ্রই আসছে</span>
       <h2>Furti প্রতিদিন আরও সহজ হচ্ছে</h2>
       <p>লিড থেকে রিপিট কাস্টমার, পুরো CRM আসছে প্রিমিয়ামে, কোনো বাড়তি টাকা ছাড়াই।</p>
     </div>
@@ -442,7 +474,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="soon-grid">
       <div class="soon-card reveal">
         <span class="soon-badge">শীঘ্রই · প্রিমিয়াম</span>
-        <div class="f-icon bg-brand">💬</div>
+        <div class="f-icon bg-brand"><svg class="i" aria-hidden="true"><use href="#i-message"/></svg></div>
         <h3>কাস্টমারকে অটোমেটিক মেসেজ</h3>
         <p>সঠিক সময়ে সঠিক মেসেজ, আপনাকে মনেও রাখতে হবে না।</p>
         <ul class="check-list">
@@ -457,7 +489,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="soon-card reveal">
         <span class="soon-badge">শীঘ্রই · প্রিমিয়াম</span>
-        <div class="f-icon bg-sun">🤖</div>
+        <div class="f-icon bg-sun"><svg class="i" aria-hidden="true"><use href="#i-bot"/></svg></div>
         <h3>AI দিয়ে ফেসবুক মেসেজের রিপ্লাই</h3>
         <p>আপনি ঘুমালেও কাস্টমার উত্তর পাবে, সেল মিস হবে না।</p>
         <ul class="check-list">
@@ -473,7 +505,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="soon-card reveal">
         <span class="soon-badge">শীঘ্রই · প্রিমিয়াম</span>
-        <div class="f-icon bg-brand">📇</div>
+        <div class="f-icon bg-brand"><svg class="i" aria-hidden="true"><use href="#i-kanban"/></svg></div>
         <h3>লিড ট্র্যাকিং ও কাস্টমার ওয়ার্কফ্লো</h3>
         <p>কে মেসেজ করল, কে কিনল, কাকে ফলো-আপ করতে হবে, সব এক বোর্ডে।</p>
         <ul class="check-list">
@@ -500,7 +532,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="section" id="calculator">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">🧮 হিসাব করে দেখুন</span>
+      <span class="eyebrow"><svg class="i" aria-hidden="true"><use href="#i-calculator"/></svg> হিসাব করে দেখুন</span>
       <h2>রিটার্নে মাসে কত টাকা হারাচ্ছেন?</h2>
       <p>আপনার নিজের সংখ্যা দিয়ে দেখুন। ফলাফল হয়তো আপনাকে চমকে দেবে।</p>
     </div>
@@ -534,7 +566,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <div class="showcase">
       <div class="sc-text reveal">
-        <span class="sc-tag bg-brand" style="color:var(--brand-700)">⭐ সবচেয়ে বড় পার্থক্য</span>
+        <span class="sc-tag bg-brand" style="color:var(--brand-700)"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg> সবচেয়ে বড় পার্থক্য</span>
         <h2>কাস্টমারের জন্য আপনার শপের নিজের মোবাইল অ্যাপ</h2>
         <p>বড় ব্র্যান্ডের মতো নিজের অ্যাপ, এখন আপনার শপেরও। কাস্টমারের ফোনে আপনার শপ থাকলে সে বারবার ফিরে আসে।</p>
         <ul class="check-list">
@@ -571,7 +603,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="app-item"><img src="assets/img/gawa-ghee.webp" alt="" loading="lazy" width="56" height="56"><span><b>গাওয়া ঘি</b><small>৳১,১৫০</small></span><i>+</i></div>
           <div class="app-item"><img src="assets/img/ajwa-dates.webp" alt="" loading="lazy" width="56" height="56"><span><b>আজওয়া খেজুর</b><small>৳১,৪৫০</small></span><i>+</i></div>
           <span class="app-cta">আবার অর্ডার করুন</span>
-          <div class="app-nav"><span class="on">🏠</span><span>🔍</span><span>🛒</span><span>👤</span></div>
+          <div class="app-nav"><span class="on"><svg class="i" aria-hidden="true"><use href="#i-home"/></svg></span><span><svg class="i" aria-hidden="true"><use href="#i-search"/></svg></span><span><svg class="i" aria-hidden="true"><use href="#i-cart"/></svg></span><span><svg class="i" aria-hidden="true"><use href="#i-user"/></svg></span></div>
         </div>
       </div>
     </div>
@@ -582,7 +614,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="section" id="compare">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">⚖️ তুলনা করে দেখুন</span>
+      <span class="eyebrow"><svg class="i" aria-hidden="true"><use href="#i-scale"/></svg> তুলনা করে দেখুন</span>
       <h2>৪-৫টা টুলের কাজ, একটাই Furti-তে</h2>
       <p>শপ, ডেলিভারি, ফেক অর্ডার চেক আর কাস্টমার ম্যানেজমেন্ট (CRM), সব এক জায়গায়, কোনো মাসিক খরচ ছাড়াই।</p>
     </div>
@@ -605,7 +637,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </tr>
         </thead>
         <tbody>
-          <tr class="cmp-group"><th scope="rowgroup">💰 খরচ</th><td class="cmp-furti"></td><td></td><td></td></tr>
+          <tr class="cmp-group"><th scope="rowgroup"><svg class="i" aria-hidden="true"><use href="#i-coins"/></svg> খরচ</th><td class="cmp-furti"></td><td></td><td></td></tr>
           <tr>
             <th scope="row">মাসিক খরচ</th>
             <td class="cmp-furti" data-label="Furti"><b class="cmp-price">৳০</b><span class="cmp-txt">থেকে শুরু</span></td>
@@ -619,7 +651,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <td data-label="আলাদা সমাধান"><span class="cmp-txt">—</span></td>
           </tr>
 
-          <tr class="cmp-group"><th scope="rowgroup">📈 সেল বাড়ানো</th><td class="cmp-furti"></td><td></td><td></td></tr>
+          <tr class="cmp-group"><th scope="rowgroup"><svg class="i" aria-hidden="true"><use href="#i-trend"/></svg> সেল বাড়ানো</th><td class="cmp-furti"></td><td></td><td></td></tr>
           <tr>
             <th scope="row">মোবাইল-ফ্রেন্ডলি শপ</th>
             <td class="cmp-furti" data-label="Furti"><span class="mk yes"><svg><use href="#i-check"/></svg><span class="sr-only">আছে</span></span></td>
@@ -639,7 +671,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <td data-label="আলাদা সমাধান"><span class="mk no"><svg><use href="#i-x"/></svg><span class="sr-only">নেই</span></span></td>
           </tr>
 
-          <tr class="cmp-group"><th scope="rowgroup">🚚 ডেলিভারি ও রিটার্ন</th><td class="cmp-furti"></td><td></td><td></td></tr>
+          <tr class="cmp-group"><th scope="rowgroup"><svg class="i" aria-hidden="true"><use href="#i-truck"/></svg> ডেলিভারি ও রিটার্ন</th><td class="cmp-furti"></td><td></td><td></td></tr>
           <tr>
             <th scope="row">ডেলিভারি রেকর্ড / ফেক অর্ডার চেক</th>
             <td class="cmp-furti" data-label="Furti"><span class="mk yes"><svg><use href="#i-check"/></svg><span class="sr-only">আছে</span></span></td>
@@ -665,7 +697,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <td data-label="আলাদা সমাধান"><span class="mk no"><svg><use href="#i-x"/></svg><span class="sr-only">নেই</span></span></td>
           </tr>
 
-          <tr class="cmp-group"><th scope="rowgroup">👥 কাস্টমার ম্যানেজমেন্ট (CRM)</th><td class="cmp-furti"></td><td></td><td></td></tr>
+          <tr class="cmp-group"><th scope="rowgroup"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg> কাস্টমার ম্যানেজমেন্ট (CRM)</th><td class="cmp-furti"></td><td></td><td></td></tr>
           <tr>
             <th scope="row">লিড ট্র্যাকিং</th>
             <td class="cmp-furti" data-label="Furti"><a class="pill pill-amber" href="#soon">শীঘ্রই · প্রিমিয়াম</a></td>
@@ -711,7 +743,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="section section-soft" id="pricing">
   <div class="wrap" style="text-align:center">
     <div class="section-head reveal">
-      <span class="eyebrow">💚 প্রাইস</span>
+      <span class="eyebrow"><svg class="i" aria-hidden="true"><use href="#i-tag"/></svg> প্রাইস</span>
       <h2>দাম নিয়ে কোনো চিন্তা নেই</h2>
       <p>শপ চালানোর সব ফিচার সারাজীবন ফ্রি। নিজের ডোমেইন বা CRM চাইলে তবেই প্রিমিয়াম।</p>
     </div>
@@ -748,7 +780,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul class="check-list">
           <li><span class="tick"><svg><use href="#i-check"/></svg></span>ফ্রি প্ল্যানের সব কিছু</li>
           <li><span class="tick"><svg><use href="#i-check"/></svg></span>নিজের ডোমেইন (যেমন rahimfashion.com)</li>
-          <li><span class="tick"><svg><use href="#i-check"/></svg></span>ডোমেইনে ফ্রি SSL (🔒 প্যাডলক)</li>
+          <li><span class="tick"><svg><use href="#i-check"/></svg></span>ডোমেইনে ফ্রি SSL (<svg class="i" aria-hidden="true"><use href="#i-lock"/></svg> প্যাডলক)</li>
           <li><span class="tick"><svg><use href="#i-check"/></svg></span>Furti ব্যাজ ছাড়া, শুধু আপনার ব্র্যান্ড</li>
           <li><span class="tick"><svg><use href="#i-check"/></svg></span>CRM: লিড ট্র্যাকিং, অটোমেটিক মেসেজ, ওয়ার্কফ্লো, AI রিপ্লাই <span class="pill pill-amber">শীঘ্রই</span></li>
         </ul>
@@ -762,7 +794,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="section" id="faq">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">🙋 প্রশ্ন-উত্তর</span>
+      <span class="eyebrow"><svg class="i" aria-hidden="true"><use href="#i-help"/></svg> প্রশ্ন-উত্তর</span>
       <h2>সাধারণ কিছু প্রশ্ন</h2>
     </div>
     <div class="faq">
