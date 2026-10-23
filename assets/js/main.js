@@ -10,6 +10,35 @@
     window.dataLayer.push(Object.assign({ event: event }, data || {}));
   }
 
+  // Meta custom events: clicks are interactions, not completed registrations.
+  function trackMeta(event, data) {
+    if (typeof window.fbq === 'function') {
+      window.fbq('trackCustom', event, data || {});
+    }
+  }
+
+  document.addEventListener('click', function (event) {
+    var button = event.target.closest('button, a.btn, [data-demo], [data-call]');
+    if (!button) return;
+    trackMeta('ButtonClick', {
+      button_text: button.textContent.trim(),
+      button_location: button.dataset.cta || button.dataset.demo || button.dataset.call || 'pricing',
+      button_type: button.dataset.cta ? 'signup' : button.dataset.demo ? 'demo' : button.dataset.call ? 'call' : 'billing',
+      billing_period: button.dataset.billing || ''
+    });
+  });
+
+  // Fire once per page load when a scroll reaches within 2px of the bottom.
+  var bottomTracked = false;
+  window.addEventListener('scroll', function () {
+    var pageHeight = document.documentElement.scrollHeight;
+    if (!bottomTracked && window.scrollY > 0 && window.scrollY + window.innerHeight >= pageHeight - 2) {
+      bottomTracked = true;
+      trackMeta('ScrollToBottom', { scroll_depth: 100 });
+      track('scroll_to_bottom', { scroll_depth: 100 });
+    }
+  }, { passive: true });
+
   // Every "ফ্রিতেই স্টার্ট করুন" button says which section it is in (data-cta="hero", "final"...)
   document.querySelectorAll('[data-cta]').forEach(function (el) {
     el.addEventListener('click', function () {
